@@ -32,9 +32,9 @@ struct DailyForecast: Codable {
 }
 
 struct ForecastDetail: Codable {
-    let weather: String
-    let wind: String
-    let wave: String
+    let weather: String?
+    let wind: String?
+    let wave: String?
 }
 
 struct Temperature: Codable {

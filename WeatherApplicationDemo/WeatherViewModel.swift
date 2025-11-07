@@ -25,6 +25,7 @@ class WeatherViewModel: ObservableObject {
                 let forecast = try await weatherService.fetchWeatherForecast()
                 weatherForecast = forecast
             } catch {
+                print(error)
                 errorMessage = error.localizedDescription
             }
             isLoading = false
